@@ -45,3 +45,8 @@ weatherForm.addEventListener('submit', (e) => {
         })
     })
 })
+
+//Can create dev dependencies for nodemon by doing: 
+// npm install nodemon --save-dev
+// This is instead of installing it globally on local machine
+// It should be  brought in as local dev dependency
