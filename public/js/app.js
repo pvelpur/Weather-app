@@ -28,7 +28,8 @@ weatherForm.addEventListener('submit', (e) => {
     mesOne.textContent = "Loading..."
     mesTwo.textContent = ''
 
-    //Actual Code
+    //Actual Code 
+    // Didnt provide entire url so it can distiguish btwn heroku or localhost
     fetch('/weather?address='+location).then((response) => {
         response.json().then((data) => {
             if(data.error)
