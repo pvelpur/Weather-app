@@ -7,6 +7,9 @@ const forecast = require('./utils/forecast') //no need to put .js extension?
 // express is a function that is called to make a new express application
 const app = express()
 
+//For heroku or 3000 if locally
+const port = process.env.PORT || 3000
+
 // console.log(__dirname)
 // console.log(__filename)
 // console.log(path.join(__dirname, '../public'))
@@ -133,6 +136,6 @@ app.get('*', (req, res) => {
 // app.com/help
 // app.com/about
 
-app.listen(3000, () => {
-    console.log('Server started up on port 3000')
+app.listen(port, () => {
+    console.log('Server started up on port ' + port)
 })
